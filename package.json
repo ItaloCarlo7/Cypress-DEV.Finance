@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "cypress:run:mobile": "npx cypress run --config viewportWidth=412,viewportHeight=915",
-    "cypress:run": "npx cypress run"
+    "test": "npx cypress run"
   },
   "keywords": [],
   "author": "",
