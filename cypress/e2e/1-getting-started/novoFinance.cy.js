@@ -2,7 +2,6 @@
 
 describe('Transações', () => {
 
-
 beforeEach(() => {   //hooks
     cy.visit("https://dev-finance.netlify.app/")
 });
