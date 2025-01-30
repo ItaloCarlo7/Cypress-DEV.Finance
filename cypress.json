@@ -1,0 +1,11 @@
+{
+    "extends": "./base.json",
+    "$schema": "https://on.cypress.io/cypress.schema.json",
+    "baseUrl": "https://dev-finance.netlify.app/",
+    "env": {
+        "user": "Italo-cypress"
+    },
+    "projectId": "kwigwc",
+    "experimentalSourceRewriting": true,
+    "experimentalStudio": true
+}
