@@ -33,6 +33,20 @@ context('Dev Finances Agilizei', () => {
         cy.get('#data-table tbody tr').should('have.length', 1)
 
     });
+    it('Cadastrar Nova Entrada', () => {
+         /* ==== Generated with Cypress Studio ==== */
+         cy.get('#transaction > .button').click();
+         cy.get('#description').clear('Renegade');
+         cy.get('#description').type('Renegade Longitude');
+         cy.get('#amount').clear('6');
+         cy.get('#amount').type('63000');
+         cy.get('#date').clear('0002-01-31');
+         cy.get('#date').type('2025-01-31');
+         cy.get('button').click();
+         /* ==== End Cypress Studio ==== */
+         cy.get('#data-table tbody tr').should('have.length', 1)
+
+    });
     // Cadastrar saídas
     // Remover entradas e saídas
     it('Cadastrar saídas', () => {
@@ -85,6 +99,7 @@ context('Dev Finances Agilizei', () => {
         // Asserção
         cy.get('#data-table tbody tr').should('have.length', 0)
 
+       
     });
     
 });
